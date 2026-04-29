@@ -55,7 +55,7 @@ export function StylistSection() {
           {stylists.map((s) => (
             <div key={s.name} className={`stylist-card ${s.offset ? "md:mt-16" : ""}`}>
               <div
-                className="mb-6 relative overflow-hidden"
+                className="mb-6 relative overflow-hidden rounded-md"
                 style={{ height: "420px", background: "var(--gray-100)" }}
               >
                 <Image
@@ -63,7 +63,7 @@ export function StylistSection() {
                   alt={`${s.name} photo`}
                   fill
                   sizes="(max-width: 768px) 80vw, (max-width: 1024px) 40vw, 30vw"
-                  className="object-cover rounded-md"
+                  className="object-cover"
                 />
               </div>
               <div className="flex items-start justify-between mb-3">

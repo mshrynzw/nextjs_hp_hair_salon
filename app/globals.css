@@ -22,7 +22,7 @@ body {
   padding: 0;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 300;
-  background: #fafafa;
+  background: transparent;
   color: #171717;
   overflow-x: hidden;
 }
