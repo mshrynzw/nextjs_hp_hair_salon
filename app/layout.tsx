@@ -20,7 +20,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SALON — Wireframe",
+  title: "MAISON",
   // TODO: Add description
   description: "",
 };
