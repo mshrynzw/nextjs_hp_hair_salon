@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+:root {
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #262626;
+  --gray-900: #171717;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  background: #fafafa;
+  color: #171717;
+  overflow-x: hidden;
+}
+
+.cormorant {
+  font-family: "Cormorant Garamond", serif;
+}
+.mono {
+  font-family: "DM Mono", monospace;
+}
+
+/* Wireframe placeholder boxes */
+.wf-img {
+  background: var(--gray-200);
+  border: 1px solid var(--gray-300);
+  position: relative;
+  overflow: hidden;
+}
+.wf-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      transparent calc(50% - 0.5px),
+      var(--gray-300) calc(50% - 0.5px),
+      var(--gray-300) calc(50% + 0.5px),
+      transparent calc(50% + 0.5px)
+    ),
+    linear-gradient(
+      45deg,
+      transparent calc(50% - 0.5px),
+      var(--gray-300) calc(50% - 0.5px),
+      var(--gray-300) calc(50% + 0.5px),
+      transparent calc(50% + 0.5px)
+    );
+}
+.wf-img-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  color: var(--gray-500);
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+
+.divider {
+  border-color: var(--gray-200);
+}
+.thin-line {
+  height: 1px;
+  background: var(--gray-200);
+}
+
+/* Subtle label badges */
+.section-label {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--gray-400);
+  text-transform: uppercase;
+}
+
+/* Nav link hover */
+.nav-link {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: var(--gray-900);
+}
+
+/* CTA button */
+.btn-primary {
+  background: var(--gray-900);
+  color: #fafafa;
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 14px 40px;
+  transition: background 0.2s;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+}
+.btn-primary:hover {
+  background: var(--gray-700);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--gray-900);
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 13px 40px;
+  border: 1px solid var(--gray-900);
+  transition: all 0.2s;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn-outline:hover {
+  background: var(--gray-900);
+  color: #fafafa;
+}
+
+/* Horizontal scroll snap for stylists on mobile */
+@media (max-width: 768px) {
+  .stylist-row {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+  }
+  .stylist-card {
+    scroll-snap-align: start;
+    flex: 0 0 80%;
+  }
+}
+
+/* Staggered grid line decoration */
+.grid-line-deco {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--gray-200);
+  pointer-events: none;
+}
+
+/* Vertical text */
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
