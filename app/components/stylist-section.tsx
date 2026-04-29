@@ -28,7 +28,7 @@ export function StylistSection() {
 
   return (
     <section id="stylist" className="py-28 md:py-40">
-      <div className="max-w-screen-xl mx-auto px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex items-center gap-6 mb-20">
           <span className="section-label">03 — Stylist</span>
           <div className="flex-1 thin-line"></div>

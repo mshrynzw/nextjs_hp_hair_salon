@@ -1,7 +1,7 @@
 export function SiteFooter() {
   return (
     <footer style={{ background: "var(--gray-900)" }} className="pt-20 pb-10">
-      <div className="max-w-screen-xl mx-auto px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div
           className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-0 pb-16"
           style={{ borderBottom: "1px solid var(--gray-800)" }}

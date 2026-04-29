@@ -18,11 +18,18 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 300;
   background: #fafafa;
   color: #171717;
   overflow-x: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
 }
 
 .cormorant {

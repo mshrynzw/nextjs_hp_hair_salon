@@ -20,7 +20,7 @@ export function ReserveSection() {
         </span>
       </div>
 
-      <div className="relative z-10 max-w-screen-xl mx-auto px-6 md:px-12 lg:px-20 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center">
         <p className="section-label mb-8">05 — Book Appointment</p>
         <h2
           className="cormorant font-light mb-8"

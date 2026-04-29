@@ -12,7 +12,7 @@ export function HeaderNav() {
       className="sticky top-0 z-50 bg-white"
       style={{ borderBottom: "1px solid var(--gray-200)" }}
     >
-      <div className="max-w-screen-xl mx-auto px-6 md:px-12 lg:px-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a
             href="#"

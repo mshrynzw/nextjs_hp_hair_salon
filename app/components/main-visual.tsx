@@ -4,9 +4,9 @@ export function MainVisual() {
       className="relative w-full overflow-hidden"
       style={{ minHeight: "100vh", background: "var(--gray-100)" }}
     >
-      <div className="absolute inset-0" style={{ borderTop: "none" }}>
+      <div className="absolute" style={{ borderTop: "none", overflow: "hidden" }}>
         <video
-          className="w-full h-full object-cover"
+          className="block h-full w-auto min-w-full max-w-none object-cover object-center"
           autoPlay
           muted
           loop
@@ -19,7 +19,7 @@ export function MainVisual() {
       </div>
 
       <div
-        className="relative z-10 max-w-screen-xl mx-auto px-6 md:px-12 lg:px-20 h-full flex items-end pb-20 md:pb-32"
+        className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 h-full flex items-end pb-20 md:pb-32"
         style={{ minHeight: "90vh" }}
       >
         <div className="max-w-xl">
