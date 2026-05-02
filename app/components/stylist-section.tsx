@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-export function StylistSection() {
+export function StylistSection({
+  sectionRef,
+}: {
+  sectionRef: React.RefObject<HTMLDivElement | null>;
+}) {
   const stylists = [
     {
       name: "Aoi Yamada",
@@ -27,8 +31,8 @@ export function StylistSection() {
   ];
 
   return (
-    <section id="stylist" className="py-28 md:py-40">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+    <section id="stylist" ref={sectionRef} className="pt-12 pb-[480px]">
+      <div className="parallax-img max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex items-center gap-6 mb-20">
           <span className="section-label">03 — Stylist</span>
           <div className="flex-1 thin-line"></div>

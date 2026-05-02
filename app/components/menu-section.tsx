@@ -1,7 +1,16 @@
-export function MenuSection() {
+export function MenuSection({
+  sectionRef,
+}: {
+  sectionRef: React.RefObject<HTMLDivElement | null>;
+}) {
   return (
-    <section id="menu" style={{ background: "var(--gray-900)" }} className="py-28 md:py-40">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+    <section
+      id="menu"
+      ref={sectionRef}
+      style={{ background: "var(--gray-900)" }}
+      className="pt-12 pb-[480px]"
+    >
+      <div className="parallax-img max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex items-center gap-6 mb-20">
           <span className="mono text-xs tracking-widest" style={{ color: "var(--gray-500)" }}>
             02 — Menu
