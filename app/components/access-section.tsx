@@ -1,12 +1,8 @@
-export function AccessSection({
-  sectionRef,
-}: {
-  sectionRef: React.RefObject<HTMLDivElement | null>;
-}) {
+export function AccessSection() {
   return (
     <section
       id="access"
-      ref={sectionRef}
+      data-parallax-section
       style={{ background: "var(--gray-100)" }}
       className="pt-12 pb-[480px]"
     >

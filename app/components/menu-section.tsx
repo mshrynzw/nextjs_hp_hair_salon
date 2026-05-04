@@ -1,12 +1,8 @@
-export function MenuSection({
-  sectionRef,
-}: {
-  sectionRef: React.RefObject<HTMLDivElement | null>;
-}) {
+export function MenuSection() {
   return (
     <section
       id="menu"
-      ref={sectionRef}
+      data-parallax-section
       style={{ background: "var(--gray-900)" }}
       className="pt-12 pb-[480px]"
     >

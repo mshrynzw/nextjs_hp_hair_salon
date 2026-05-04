@@ -53,7 +53,7 @@ export function WaterBackground() {
     dropStarts.fill(DROP_INACTIVE);
     const dropWaveScales = new Float32Array(MAX_DROPS);
     dropWaveScales.fill(0.55);
-    const rippleScaleRange = { min: 0.35, max: 2.02 };
+    const rippleScaleRange = { min: 1.0, max: 1.0 };
     let ringWrite = 0;
 
     const registerDrop = (uv: THREE.Vector2) => {
@@ -137,7 +137,7 @@ export function WaterBackground() {
     scene.add(waterMesh);
 
     registerDrop(new THREE.Vector2(0.5, 0.5));
-    const autoDrop = { enabled: true, intervalMinSec: 1.8, intervalMaxSec: 3.8, margin: 0.2 };
+    const autoDrop = { enabled: true, intervalMinSec: 1.8, intervalMaxSec: 3.3, margin: 0.2 };
     const sampleAutoIntervalSec = () => {
       const lo = Math.min(autoDrop.intervalMinSec, autoDrop.intervalMaxSec);
       const hi = Math.max(autoDrop.intervalMinSec, autoDrop.intervalMaxSec);

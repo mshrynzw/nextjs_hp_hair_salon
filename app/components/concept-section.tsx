@@ -1,12 +1,8 @@
 import Image from "next/image";
 
-export function ConceptSection({
-  sectionRef,
-}: {
-  sectionRef: React.RefObject<HTMLDivElement | null>;
-}) {
+export function ConceptSection() {
   return (
-    <section id="concept" ref={sectionRef} className="pt-12 pb-[480px]">
+    <section id="concept" data-parallax-section className="pt-12 pb-[480px]">
       <div className="parallax-img max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="flex items-center gap-6 mb-20">
           <span className="section-label">01 — Concept</span>

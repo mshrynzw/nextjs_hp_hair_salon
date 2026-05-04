@@ -1,13 +1,8 @@
-export function ReserveSection({
-  sectionRef,
-}: {
-  sectionRef: React.RefObject<HTMLDivElement | null>;
-}) {
+export function ReserveSection() {
   return (
     <section
       id="reserve"
-      ref={sectionRef}
-      className="parallax-img py-48 relative overflow-hidden"
+      className="py-48 relative overflow-hidden"
       style={{ background: "white" }}
     >
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
